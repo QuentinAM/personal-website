@@ -1,3 +1,5 @@
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-</h1>
+<div class="hero min-h-screen bg-base-200">
+    <div class="hero-content text-center">
+        
+    </div>
+</div>
