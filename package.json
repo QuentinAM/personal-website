@@ -30,6 +30,12 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"daisyui": "^2.20.0"
+		"@icons-pack/svelte-simple-icons": "^3.0.0",
+		"add": "^2.0.6",
+		"daisyui": "^2.20.0",
+		"install": "^0.13.0",
+		"npm": "^8.15.1",
+		"octokit": "^2.0.4",
+		"svelte-typewriter": "^3.0.1"
 	}
 }
