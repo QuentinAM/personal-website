@@ -23,7 +23,7 @@
 
 </script>
 
-<div class="mockup-code max-h-96 overflow-auto" style="--cursor-color:white;">
+<div class="mockup-code h-full overflow-auto" style="--cursor-color:white;">
     {#each $logs as log}
         <div use:cascade={{ interval: 30 }} in:slide|local>
             {#each log as node}

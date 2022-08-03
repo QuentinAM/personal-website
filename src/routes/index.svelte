@@ -26,8 +26,18 @@
                 <Social/>
             </div>
         </div>
-        <div class="lg:w-1/2 w-full">
-            <Logs/>
+        <div class="lg:w-1/2 w-[99]">
+            <div class="flex flex-col h-full">
+                <div class="h-1/2">
+                    <Logs/>
+                </div>
+                <div class="h-1/2 w-full flex justify-center">
+                    <div class="mt-20">
+                        <p class="h-20 -mb-20 animate-bounce">⚙️ Site in dev...</p>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

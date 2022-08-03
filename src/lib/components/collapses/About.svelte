@@ -19,7 +19,7 @@
             <p>Love to use moderns tools to develop website, softwares, tools...</p>
         </div>
         <div class="font-semibold mt-3">Languages I am familiar with</div>
-        <div class="flex space-x-3 mt-1">
+        <div class="flex overflow-auto space-x-3 mt-1">
             <div class="badge bg-orange-500 text-black text-xl p-3"><i class="fa-brands fa-java"></i>&nbsp;Java</div>
             <div class="badge badge-warning text-xl p-3"><i class="fa-brands fa-square-js"></i>&nbsp;Javascript</div>
             <div class="badge badge-error text-xl p-3"><Svelte/>Svelte</div>
@@ -30,7 +30,7 @@
             <div class="badge badge-warning text-xl p-3"><OCaml/>OCaml</div>
         </div>
         <div class="font-semibold mt-3">Tools I am familiar with</div>
-        <div class="flex space-x-3 mt-1">
+        <div class="flex overflow-auto space-x-3 mt-1">
             <div class="badge text-xl p-3"><Firebase class="text-warning"/>Firebase</div>
             <div class="badge text-xl p-3"><Tailwind class="text-blue-600"/>TailwindCSS</div>
             <div class="badge text-xl p-3"><i class="fa-brands fa-unity"></i>&nbsp;Unity</div>
