@@ -1,4 +1,12 @@
 import { writable } from "svelte/store";
+import { tweened, type Tweened } from 'svelte/motion';
+import { cubicOut } from 'svelte/easing';
+
+export const infosValue = tweened(0, {
+    duration: 2000,
+    easing: cubicOut,
+});
+
 export const logs = writable<any[]>([[{
     prefix: '$',
     class: '',
@@ -7,7 +15,9 @@ export const logs = writable<any[]>([[{
 {
     prefix: '>',
     class: 'text-warning',
-    content: 'Installing...'
+    content: 'Installing...',
+    progress: true,
+    id: "infos"
 },
 {
     prefix: '>',
