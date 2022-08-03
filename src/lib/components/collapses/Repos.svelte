@@ -4,7 +4,7 @@
     import RepoCard from '../RepoCard.svelte';
 
     let repos: any[] = [];
-    let collapsed: boolean;
+    export let collapsed: boolean;
 
     onMount(async () => {
         const res = await fetch('https://api.github.com/users/quentinam/repos');
@@ -20,7 +20,7 @@
         AddLog('display github repos', 'Downloading quentinam repos...', 'Done!')
 }} 
     class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
-    <input type="checkbox" bind:checked={collapsed} /> 
+    <input type="checkbox" on:click bind:checked={collapsed} /> 
     <div class="collapse-title text-xl font-medium"><i class="fa-brands fa-github"></i> Github repos</div>
     <div class="collapse-content"> 
         {#if repos}

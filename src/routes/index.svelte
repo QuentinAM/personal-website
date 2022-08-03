@@ -3,6 +3,11 @@
     import Repos from '$lib/components/collapses/Repos.svelte';
     import About from '$lib/components/collapses/About.svelte';
     import Social from '$lib/components/collapses/Social.svelte';
+
+    let aboutCollapsed = true;
+    let reposCollapsed = false;
+    let socialCollapsed = false;
+
 </script>
 
 <div class="hero min-h-screen bg-base-200">
@@ -21,9 +26,24 @@
                 </div>
             </div>
             <div class="mt-5">
-                <About/>
-                <Repos/>
-                <Social/>
+                <About collapsed={aboutCollapsed} on:click={() => { 
+                    console.log('About clicked');
+                    aboutCollapsed = !aboutCollapsed;
+                    reposCollapsed = false;
+                    socialCollapsed = false;
+                }}/>
+                <Repos collapsed={reposCollapsed} on:click={() => {
+                    console.log('Repos clicked');
+                    aboutCollapsed = false;
+                    reposCollapsed = !reposCollapsed;
+                    socialCollapsed = false;
+                }}/>
+                <Social collapsed={socialCollapsed} on:click={() => {
+                    console.log('Social clicked');
+                    aboutCollapsed = false;
+                    reposCollapsed = false;
+                    socialCollapsed = !socialCollapsed;
+                }}/>
             </div>
         </div>
         <div class="lg:w-1/2 w-[99]">

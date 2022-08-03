@@ -1,7 +1,8 @@
 <script lang="ts">
     import { AddLog } from '$lib/utils';
     import { Firebase, Svelte, CSharp, ConfigPython, CPlusPlus, OCaml, Tailwind, Flask } from 'svelte-file-icons';
-    let collapsed: boolean = true;
+    
+    export let collapsed: boolean;
 </script>
 
 <div on:click={() => {
@@ -9,7 +10,7 @@
         AddLog('display about', 'Displaying about...', 'Done!')
 }} 
     class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
-    <input type="checkbox" bind:checked={collapsed} /> 
+    <input type="checkbox" on:click bind:checked={collapsed} /> 
     <div class="collapse-title text-xl font-medium"><i class="fa-solid fa-address-card"></i> About</div>
     <div class="collapse-content"> 
         <p class="font-semibold">19yo</p>
